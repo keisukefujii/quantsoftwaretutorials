@@ -1,7 +1,7 @@
 #from qulacs.gate import PauliRotation
 #from qulacs import ParametricQuantumCircuit
 #import scipy.optimize
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 #import numpy as np
 #import time 
 #import random
