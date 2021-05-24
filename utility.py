@@ -26,7 +26,8 @@ import re
 
 def show_distribution(state):
     nqubits = state.get_qubit_count()
-    plt.bar([i for i in range(pow(2,nqubits))],pow(abs(state.get_vector()),2))
+    plt.bar([i for i in range(pow(2,nqubits))],pow(abs(state.get_vector()),2), tick_label=[bin(i) for i in range(pow(2,nqubits))])
+    plt.xticks(rotation=90)
     plt.show()
 
 def qasm_to_qulacs_fromfile(input_filepath,qulacs_circuit):
